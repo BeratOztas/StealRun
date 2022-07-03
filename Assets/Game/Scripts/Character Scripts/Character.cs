@@ -31,9 +31,6 @@ public class Character : MonoBehaviour
    
     private bool isCatched = false;
 
-   
-    
-    
     public enum CharacterState {
         WAIT,
         CHASE,
@@ -52,7 +49,6 @@ public class Character : MonoBehaviour
     
     void Start()
     {
-        
         ActiveObject();
         agent = GetComponentInParent<NavMeshAgent>();
     }
@@ -62,8 +58,6 @@ public class Character : MonoBehaviour
         if (canChase) {
             objects[random].gameObject.SetActive(false);
             characterAnim.React();
-            
-            
             
             if (Vector3.Distance(transform.position, target.position) >= ChaseDistance)
             {
@@ -114,11 +108,10 @@ public class Character : MonoBehaviour
             agent.SetDestination(target.position);        
             characterAnim.Run(true);
         
-
         if (Vector3.Distance(transform.position, target.position) <= AttackDistance)
             {
 
-            //characterAnim.Run
+            
             characterAnim.Run(false);
 
             characterState = CharacterState.ATTACK;

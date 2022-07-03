@@ -103,8 +103,8 @@ public class UIManager :MonoSingleton<UIManager>
     }//PlayResButton
     private void Update()
     {
-        Debug.Log("Total Phone AMount : " + PlayerPrefs.GetInt("TotalPhone"));
-        Debug.Log("COllectedPhone AMount: " + PlayerManagement.Instance.collectedLvlPhoneAmount);
+        Debug.Log("Total Phone Amount : " + PlayerPrefs.GetInt("TotalPhone"));
+        Debug.Log("CollectedPhone Amount: " + PlayerManagement.Instance.collectedLvlPhoneAmount);
     }
 
     public void NextLvlUI()

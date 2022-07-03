@@ -35,52 +35,7 @@ public class ColledableObjects : MonoBehaviour
             gameObject.SetActive(false);
             
         }
-        //if (objectType == ObjectType.StaticObstacle && other.CompareTag("Player")) {
-
-        //    var particle = ObjectPooler.Instance.GetPooledObject("Hit Effect");
-        //    particle.transform.position = other.gameObject.transform.position + new Vector3(0f, 0.75f, 0.5f);
-        //    particle.transform.rotation = gameObject.transform.rotation;
-        //    particle.SetActive(true);
-        //    particle.GetComponent<ParticleSystem>().Play();
-
-        //    Invoke("FailedAction", 0f);
-
-        //}
-        //if(objectType == ObjectType.StaticObstacle && other.CompareTag("Character")) {
-        //    if (!other.GetComponent<Character>().isTouched)
-        //     {
-        //        var particle = ObjectPooler.Instance.GetPooledObject("Hit Effect");
-        //        particle.transform.rotation = gameObject.transform.rotation;
-        //        particle.transform.position = other.transform.position + new Vector3(0f, 0.75f, 0.5f);
-        //        particle.SetActive(true);
-        //        other.GetComponent<Character>().isTouched = true;
-        //        other.gameObject.SetActive(false);
-
-        //    }
-
-
-        //}
-        //if (objectType == ObjectType.HorizontalObstacle && other.CompareTag("Player"))
-        //{
-        //    var particle = ObjectPooler.Instance.GetPooledObject("Hit Effect");
-        //    particle.transform.position = other.gameObject.transform.position + new Vector3(0f, 0.75f, 0.5f);
-        //    particle.transform.rotation = gameObject.transform.rotation;
-        //    particle.SetActive(true);
-        //    particle.GetComponent<ParticleSystem>().Play();
-
-        //    Invoke("FailedAction", 0f);
-
-        //}
-        //if (objectType == ObjectType.HorizontalObstacle && other.CompareTag("Character"))
-        //{
-        //    var particle = ObjectPooler.Instance.GetPooledObject("Hit Effect");
-        //    particle.transform.position = other.transform.position + new Vector3(0f, 0.75f, 0.5f);
-        //    particle.transform.rotation = gameObject.transform.rotation;
-        //    particle.SetActive(true);
-
-
-
-        //}
+       
        
     
     }

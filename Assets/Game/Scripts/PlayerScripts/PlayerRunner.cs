@@ -36,7 +36,7 @@ public class PlayerRunner :MonoBehaviour
     [SerializeField] private string danceAnim_Name = "Chicken Dance";
     [SerializeField] private float danceAnim_Speed = 1f;
 
-    [SerializeField] private string currentAnimName = "Walking";
+    
 
     [Space]
     public float forwardSpeed = 1f;
@@ -80,8 +80,6 @@ public class PlayerRunner :MonoBehaviour
         navMeshSurface = FindObjectOfType<NavMeshSurface>();
         navMeshSurface.BuildNavMesh();
         
-        
-
     }
 
     void PlayerSwerve_OnSwerve(Vector2 direction)

@@ -69,14 +69,14 @@ public class PlayerManagement :MonoSingleton<PlayerManagement>
         playerRunner.takeHitAnimation();
         
        
-        //PlayParticle();
+       
         UIManager.Instance.RestartButtonUI();
     }
 
     public void StartToDance() {
         playerRunner.SetRunning(false);
         playerRunner.DanceAnimation();
-        //player.transform.DORotate(new Vector3(0, 180, 0), 3);
+        
         canWalk = false;
         UIManager.Instance.NextLvlUI();
     }
@@ -95,7 +95,7 @@ public class PlayerManagement :MonoSingleton<PlayerManagement>
 
 
         player.transform.localRotation = Quaternion.Euler(0, 0, 0);
-        //player.transform.DORotate(new Vector3(0, 180, 0), 0.1f);
+        
         character.transform.position = new Vector3(0f, 0f, 0f);
         
         playerRunner.idleAnimation();
